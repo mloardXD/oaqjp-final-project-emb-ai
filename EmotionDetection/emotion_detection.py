@@ -18,10 +18,10 @@ def emotion_detector(text_to_analyse):
 
    for emotion in emotions:
       if emotions[emotion] == max(emotions.values()):
-         dominant_emotion = emotion
-   print(emotions)     
-   print(dominant_emotion)
+         dominant_emotion = emotion     
+   emotions['dominant_emotion'] = dominant_emotion
+   return(emotions)
     # 'dominant_emotion': dominant_emotion, 
     
 
-emotion_detector("I dont really like this, but am very disgusted")
+# emotion_detector("I dont really like this, but am very disgusted")
